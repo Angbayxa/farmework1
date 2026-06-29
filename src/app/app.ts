@@ -9,4 +9,13 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   title = 'my-app';
+  name='Tuấn Anh';
+  age=20;
+  
+  sayHello(){
+    alert('hello '+this.name+this.age)
+  }
+  delete(){
+    alert('delete'+this.name+this.age)
+  }
 }
