@@ -8,7 +8,11 @@
       <a href="#" class="hover:text-gray-200">Trang chủ</a>
       <a href="#" class="hover:text-gray-200">Danh sách</a>
       <a href="#" class="hover:text-gray-200">Thêm mới</a>
-      <a href="home/home.html" class="hover:text-gray-200">about</a>
+
+      <a routerLink="/home" class="hover:text-gray-200">Home</a>
+      <a routerLink="/about" class="hover:text-gray-200">About</a>
+      <a routerLink="/contact" class="hover:text-gray-200">Contact</a>
+      
     </div>
 
     <div class="hidden md:flex items-center space-x-6">
@@ -24,5 +28,6 @@
   {{title+ ' ' +name+ ' ' +age }}
   <button (click)="sayHello()">Click me</button>
   <button (click)="delete()">Delete</button>
+ 
   <router-outlet></router-outlet>
 </div>
