@@ -1,0 +1,16 @@
+<p>stories works!</p>
+ @if (stories.length === 0){
+ <p>ko the hien thi</p>
+ }
+       
+@for(item of stories; track item.title ){
+   
+  <div class="story-card">
+    <h2 class="text-xl font-semibold mb-2">{{item.title}}</h2>
+    <p>{{item.content}}</p>
+    <p>Views: {{item.view > 5000 ? 'High' : 'Normal'}}</p>
+    <p>Release Date: {{item.phatHanh}}</p>
+    <p>Genre: {{item.theLoai}}</p>
+  </div>
+}
+  
