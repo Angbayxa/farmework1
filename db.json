@@ -1,14 +1,6 @@
 {
   "stories": [
     {
-      "id": 1,
-      "title": "doraemon",
-      "content": "những câu chuyện về chú mèo máy doraemon",
-      "view": 1000,
-      "phatHanh": "1990",
-      "theLoai": "hoạt hình"
-    },
-    {
       "id": 2,
       "title": "naruto",
       "content": "những câu chuyện về chú mèo máy naruto",

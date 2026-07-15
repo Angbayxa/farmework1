@@ -13,13 +13,17 @@
     <th>Thể loại</th>
   </tr>
 
-  @for (item of stories; track $index) {
+  @for (story of stories; track $index) {
     <tr>
-      <td>{{ item.title }}</td>
-      <td>{{ item.content }}</td>
-      <td>{{ item.view }}</td>
-      <td>{{ item.phatHanh }}</td>
-      <td>{{ item.theLoai }}</td>
+      <td>{{ story.title }}</td>
+      <td>{{ story.content }}</td>
+      <td>{{ story.view }}</td>
+      <td>{{ story.phatHanh }}</td>
+      <td>{{ story.theLoai }}</td>
     </tr>
+    <td>
+        <button (click)="deleteStory(story.id)">Xóa</button>
+      </td>
   }
+
 </table>
