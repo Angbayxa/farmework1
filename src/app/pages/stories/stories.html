@@ -1,16 +1,25 @@
 <p>stories works!</p>
- @if (stories.length === 0){
- <p>ko the hien thi</p>
- }
-       
-@for(item of stories; track item.title ){
-   
-  <div class="story-card">
-    <h2 class="text-xl font-semibold mb-2">{{item.title}}</h2>
-    <p>{{item.content}}</p>
-    <p>Views: {{item.view > 5000 ? 'High' : 'Normal'}}</p>
-    <p>Release Date: {{item.phatHanh}}</p>
-    <p>Genre: {{item.theLoai}}</p>
-  </div>
+
+@if (stories.length === 0) {
+  <p>Không có dữ liệu</p>
 }
-  
+
+<table border="1" cellpadding="10">
+  <tr>
+    <th>Title</th>
+    <th>Content</th>
+    <th>View</th>
+    <th>Phát hành</th>
+    <th>Thể loại</th>
+  </tr>
+
+  @for (item of stories; track $index) {
+    <tr>
+      <td>{{ item.title }}</td>
+      <td>{{ item.content }}</td>
+      <td>{{ item.view }}</td>
+      <td>{{ item.phatHanh }}</td>
+      <td>{{ item.theLoai }}</td>
+    </tr>
+  }
+</table>
