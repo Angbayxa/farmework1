@@ -31,6 +31,38 @@
       "view": 6000,
       "phatHanh": "2004",
       "theLoai": "hoạt hình"
+    },
+    {
+      "id": 7,
+      "title": "cc",
+      "content": "cc",
+      "view": 123,
+      "PhatHanh": "",
+      "theLoai": "cc"
+    },
+    {
+      "id": 8,
+      "title": "bb",
+      "content": "bb",
+      "view": 222,
+      "PhatHanh": "",
+      "theLoai": "bb"
+    },
+    {
+      "id": 9,
+      "title": "vv",
+      "content": "vv",
+      "view": 123,
+      "PhatHanh": "",
+      "theLoai": "vv"
+    },
+    {
+      "title": "ss",
+      "content": "ss",
+      "view": 112,
+      "phatHanh": "2026-07-18",
+      "theLoai": "ss",
+      "id": 10
     }
   ]
 }

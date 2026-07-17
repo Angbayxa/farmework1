@@ -6,7 +6,7 @@ interface Story {
  title: string;
  content: string;
  view: number;
- phatHanh: string;
+ phatHanh: Date;
  theLoai: string;
 }
 @Component({
